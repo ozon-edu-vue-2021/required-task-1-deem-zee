@@ -42,6 +42,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     padding: 50px;
     background-color: #fff;
     box-sizing: border-box;
@@ -56,6 +57,10 @@ main {
     padding: 10px 20px;
     border-radius: 6px;
     margin: 10px 0;
+}
+
+.fetch {
+    width: fit-content;
 }
 
 .action:hover {
@@ -80,18 +85,6 @@ a {
     min-height: 100px;
 }
 
-a:nth-child(n) {
-    background-color: #EFEBE9;
-}
-
-a:nth-child(2n) {
-    background-color: #D7CCC8;
-}
-
-a:nth-child(3n) {
-    background-color: #BCAAA4;
-}
-
 /* Popup style */
 .popup .content {
     text-align: right;
@@ -102,10 +95,6 @@ figure {
     max-width: 100%;
     min-height: 350px;
     margin: 0;
-}
-
-figure img {
-    border-radius: 6px;
 }
 
 figcaption {
@@ -131,9 +120,10 @@ figcaption {
 
 .popup.open {
     visibility: visible;
+    z-index: 1;
 }
 
-.action {
+.action.close{
     position: absolute;
     top: 50px;
     right: 50px;
@@ -157,4 +147,8 @@ figcaption {
 
 .popup .link {
     display: inline;
+}
+
+img {
+    border-radius: 6px;
 }

@@ -97,10 +97,6 @@ figure {
     margin: 0;
 }
 
-figure img {
-    border-radius: 6px;
-}
-
 figcaption {
     color: #424242;
     margin: 5px 0;
@@ -153,6 +149,6 @@ figcaption {
     display: inline;
 }
 
-img.preview {
+img {
     border-radius: 6px;
 }
